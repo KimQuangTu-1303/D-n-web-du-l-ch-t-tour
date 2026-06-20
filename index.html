@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golobe - Helping Others LIVE & TRAVEL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="relative h-[650px] bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80');">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-teal-400"><i class="fa-solid fa-plane mr-2"></i>Find Flights</a>
+                <a href="#" class="hover:text-teal-400"><i class="fa-solid fa-bed mr-2"></i>Find Stays</a>
+            </div>
+            <div class="text-2xl font-bold tracking-wider text-center">golobe</div>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="#" class="hover:text-teal-400">Login</a>
+                <a href="#" class="bg-white text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-teal-500 hover:text-white transition">Sign up</a>
+            </div>
+        </nav>
+
+        <div class="text-center mt-24">
+            <h3 class="text-2xl font-semibold tracking-wide uppercase">Helping Others</h3>
+            <h1 class="text-6xl font-extrabold tracking-tight mt-2 mb-4">LIVE & TRAVEL</h1>
+            <p class="text-lg font-medium opacity-90">Special offers to suit your plan</p>
+        </div>
+
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-5xl px-6">
+            <div class="bg-white text-gray-900 p-6 rounded-xl shadow-xl">
+                <div class="flex space-x-6 border-b border-gray-100 pb-4 mb-4">
+                    <button class="flex items-center space-x-2 font-semibold text-teal-600 border-b-2 border-teal-600 pb-2"><i class="fa-solid fa-plane"></i> <span>Flights</span></button>
+                    <button class="flex items-center space-x-2 font-medium text-gray-500 hover:text-teal-600 pb-2"><i class="fa-solid fa-bed"></i> <span>Stays</span></button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="border border-gray-200 p-3 rounded-lg">
+                        <label class="block text-xs text-gray-400 uppercase font-bold mb-1">From - To</label>
+                        <input type="text" value="Lahore - Karachi" class="w-full font-medium text-sm focus:outline-none">
+                    </div>
+                    <div class="border border-gray-200 p-3 rounded-lg">
+                        <label class="block text-xs text-gray-400 uppercase font-bold mb-1">Trip</label>
+                        <select class="w-full font-medium text-sm focus:outline-none bg-transparent">
+                            <option>Return</option>
+                            <option>One Way</option>
+                        </select>
+                    </div>
+                    <div class="border border-gray-200 p-3 rounded-lg">
+                        <label class="block text-xs text-gray-400 uppercase font-bold mb-1">Depart - Return</label>
+                        <input type="text" value="07 Nov 22 - 13 Nov 22" class="w-full font-medium text-sm focus:outline-none">
+                    </div>
+                    <div class="border border-gray-200 p-3 rounded-lg">
+                        <label class="block text-xs text-gray-400 uppercase font-bold mb-1">Passenger - Class</label>
+                        <input type="text" value="1 Passenger, Economy" class="w-full font-medium text-sm focus:outline-none">
+                    </div>
+                </div>
+                <div class="flex justify-end items-center mt-4 space-x-4">
+                    <button class="text-sm font-semibold hover:underline"><i class="fa-solid fa-plus mr-1"></i> Add Promo Code</button>
+                    <button class="bg-teal-500 text-white font-semibold text-sm px-5 py-3 rounded-lg hover:bg-teal-600 transition"><i class="fa-solid fa-paper-plane mr-2"></i>Show Flights</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 mt-40 space-y-24">
+
+        <section>
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold">Plan your perfect trip</h2>
+                    <p class="text-gray-500 mt-1">Search Flights & Hotels to our most popular destinations</p>
+                </div>
+                <button class="border border-teal-500 text-teal-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-teal-50">See All Places</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <script>
+                    const destinations = [
+                        { name: "Istanbul, Turkey", img: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=300&q=80" },
+                        { name: "Sydney, Australia", img: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=300&q=80" },
+                        { name: "Baku, Azerbaijan", img: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=300&q=80" },
+                        { name: "Malé, Maldives", img: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=300&q=80" },
+                        { name: "Paris, France", img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=300&q=80" },
+                        { name: "New York, US", img: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=300&q=80" },
+                        { name: "London, UK", img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=300&q=80" },
+                        { name: "Tokyo, Japan", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=300&q=80" },
+                        { name: "Dubai, UAE", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=300&q=80" }
+                    ];
+                    destinations.forEach(item => {
+                        document.write(`
+                            <div class="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
+                                <img src="${item.img}" class="w-16 h-16 rounded-lg object-cover" alt="${item.name}">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">${item.name}</h4>
+                                    <p class="text-xs text-gray-400 mt-1">Flights • Hotels • Resorts</p>
+                                </div>
+                            </div>
+                        `);
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="relative h-[450px] rounded-2xl overflow-hidden bg-cover bg-center flex flex-col justify-end p-8 text-white" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80');">
+                <div class="text-center max-w-xs mx-auto mb-4">
+                    <h3 class="text-4xl font-bold mb-2">Flights</h3>
+                    <p class="text-sm opacity-80 mb-6">Search Flights & Places to our most popular destinations</p>
+                    <button class="bg-teal-500 text-white font-semibold text-sm px-6 py-3 rounded-lg w-full hover:bg-teal-600 transition"><i class="fa-solid fa-paper-plane mr-2"></i>Show Flights</button>
+                </div>
+            </div>
+            <div class="relative h-[450px] rounded-2xl overflow-hidden bg-cover bg-center flex flex-col justify-end p-8 text-white" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80');">
+                <div class="text-center max-w-xs mx-auto mb-4">
+                    <h3 class="text-4xl font-bold mb-2">Hotels</h3>
+                    <p class="text-sm opacity-80 mb-6">Search Hotels & Places to our most popular destinations</p>
+                    <button class="bg-teal-500 text-white font-semibold text-sm px-6 py-3 rounded-lg w-full hover:bg-teal-600 transition"><i class="fa-solid fa-paper-plane mr-2"></i>Show Hotels</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold">Reviews</h2>
+                    <p class="text-gray-500 mt-1">What people say about Golobe</p>
+                </div>
+                <button class="border border-teal-500 text-teal-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-teal-50">See All</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">"A real sense of community, nurtured"</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Really appreciate the help and support from the staff during these tough times. Shout out to everyone for the amazing effort...</p>
+                        <a href="#" class="text-xs text-gray-400 font-bold block text-right mt-2 hover:underline">View more</a>
+                    </div>
+                    <div class="mt-6">
+                        <div class="text-amber-400 space-x-1 mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="font-bold text-sm text-gray-800">Olga</p>
+                        <p class="text-xs text-gray-400">We Love New York - Indigo</p>
+                        <div class="mt-3 flex items-center text-xs text-gray-400"><i class="fa-brands fa-google text-red-500 mr-2 text-sm"></i> Google</div>
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="mt-4 w-full h-32 object-cover rounded-xl" alt="review image">
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">"The facilities are superb. Clean, slick, bright."</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">A real sense of community, nurtured! Really appreciate the help and support from the staff...</p>
+                        <a href="#" class="text-xs text-gray-400 font-bold block text-right mt-2 hover:underline">View more</a>
+                    </div>
+                    <div class="mt-6">
+                        <div class="text-amber-400 space-x-1 mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="font-bold text-sm text-gray-800">Thomas</p>
+                        <p class="text-xs text-gray-400">We Love Skyline - Horizon</p>
+                        <div class="mt-3 flex items-center text-xs text-gray-400"><i class="fa-brands fa-google text-red-500 mr-2 text-sm"></i> Google</div>
+                        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80" class="mt-4 w-full h-32 object-cover rounded-xl" alt="review image">
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm flex flex-col justify-between border border-gray-100">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">"A real sense of community, nurtured"</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Really appreciate the help and support from the staff during these tough times. Shout out to everyone for the amazing effort...</p>
+                        <a href="#" class="text-xs text-gray-400 font-bold block text-right mt-2 hover:underline">View more</a>
+                    </div>
+                    <div class="mt-6">
+                        <div class="text-amber-400 space-x-1 mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="font-bold text-sm text-gray-800">Eliot</p>
+                        <p class="text-xs text-gray-400">We Love Mountain - Ice</p>
+                        <div class="mt-3 flex items-center text-xs text-gray-400"><i class="fa-brands fa-google text-red-500 mr-2 text-sm"></i> Google</div>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80" class="mt-4 w-full h-32 object-cover rounded-xl" alt="review image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-teal-50 rounded-2xl p-8 relative overflow-hidden flex flex-col md:flex-row items-center justify-between">
+            <div class="max-w-md z-10">
+                <h3 class="text-3xl font-extrabold text-gray-900 mb-2">Subscribe Newsletter</h3>
+                <h4 class="text-md font-bold text-gray-700 mb-1">The Travel</h4>
+                <p class="text-sm text-gray-500 mb-6">Get inspired! Receive travel discounts, tips and behind-the-scenes stories.</p>
+                <div class="flex space-x-2">
+                    <input type="email" placeholder="Your email address" class="flex-1 px-4 py-3 rounded-lg text-sm bg-white border border-gray-200 focus:outline-none focus:border-teal-500">
+                    <button class="bg-gray-900 text-white font-semibold text-sm px-5 py-3 rounded-lg hover:bg-gray-800 transition">Subscribe</button>
+                </div>
+            </div>
+            <div class="hidden md:block relative w-64 h-40 mt-6 md:mt-0">
+                <div class="w-48 h-32 bg-teal-800 rounded-2xl absolute right-4 bottom-0 flex items-center justify-center text-white text-5xl shadow-lg">
+                    <i class="fa-solid fa-box-archive opacity-40"></i>
+                </div>
+                <div class="w-12 h-20 bg-red-400 rounded-t-full absolute right-0 top-4 transform rotate-12 shadow"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-teal-400 text-gray-900 mt-24 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-6 gap-8">
+            <div class="col-span-2 space-y-4">
+                <h3 class="text-2xl font-bold tracking-wider">golobe</h3>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold text-sm mb-4">Our Destinations</h5>
+                <ul class="space-y-2 text-xs font-medium opacity-80">
+                    <li><a href="#" class="hover:underline">Canada</a></li>
+                    <li><a href="#" class="hover:underline">Alaksa</a></li>
+                    <li><a href="#" class="hover:underline">France</a></li>
+                    <li><a href="#" class="hover:underline">Iceland</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-sm mb-4">Our Activities</h5>
+                <ul class="space-y-2 text-xs font-medium opacity-80">
+                    <li><a href="#" class="hover:underline">Northern Lights</a></li>
+                    <li><a href="#" class="hover:underline">Cruising & sailing</a></li>
+                    <li><a href="#" class="hover:underline">Multi-activities</a></li>
+                    <li><a href="#" class="hover:underline">Kajaking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-sm mb-4">Travel Blogs</h5>
+                <ul class="space-y-2 text-xs font-medium opacity-80">
+                    <li><a href="#" class="hover:underline">Bali Travel Guide</a></li>
+                    <li><a href="#" class="hover:underline">Sri Lanka Travel Guide</a></li>
+                    <li><a href="#" class="hover:underline">Peru Travel Guide</a></li>
+                    <li><a href="#" class="hover:underline">Bali Travel Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-sm mb-4">About Us</h5>
+                <ul class="space-y-2 text-xs font-medium opacity-80">
+                    <li><a href="#" class="hover:underline">Our Story</a></li>
+                    <li><a href="#" class="hover:underline">Work with us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
